@@ -16,12 +16,28 @@ int main()
 	cout << "Programm zu Klassen" << endl << endl;
 	
 	// ein Objekt der Klasse Punkt / Instanz
+	
 	Punkt punkt1;
+	Punkt punkt2;
+
 
 	punkt1.x = 1;
 	punkt1.y = 2;
 
+
+	punkt2.x = 11;
+	punkt2.y = 22;
+
+
 	cout << punkt1.x << "  " << punkt1.y << endl;
+
+	cout << "Ausgabe der Punkte mit Methoden" << endl;
+	punkt1.werteAusgeben();
+	punkt2.werteAusgeben();
+
+	
+
+
 
 
 	// Objekte der Klasse Person anlegen
@@ -36,6 +52,13 @@ int main()
 
 	cout << person1.vorname << "\t" << person1.nachname << endl;
 	cout << person2.vorname << "\t" << person2.nachname << endl;
+
+	cout << "Ausgabe der Namen mit Methoden" << endl;
+	person1.namenNennen();
+	person2.namenNennen();
+
+
+
 
 
 	// Objekt der Klasse Datum
@@ -63,6 +86,10 @@ int main()
 
 	// Auch möglich das so zu machen zur darstellung der nullen
 	//cout << setfill('0') << setw(3) <<  heute.monat << endl;
+
+
+
+
 
 
 	system("pause");
