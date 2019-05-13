@@ -1,5 +1,8 @@
+// Einbinden von Bibliotheken der C++ Standardbibliothek
 #include <iostream>
 #include <string>
+
+// Einbinden von Bibliotheken
 #include "punkt.h"
 #include "person.h"
 #include "datum.h"
@@ -7,11 +10,6 @@
 //#include <iomanip> // für setfill() und set()
 
 using namespace std;
-
-
-
-
-
 
 int main()
 {
@@ -65,7 +63,6 @@ int main()
 
 	// Auch möglich das so zu machen zur darstellung der nullen
 	//cout << setfill('0') << setw(3) <<  heute.monat << endl;
-
 
 
 	system("pause");
