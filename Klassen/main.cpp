@@ -44,6 +44,8 @@ int main()
 	Person person1;
 	Person person2;
 
+
+
 	person1.vorname		= "Max";
 	person1.nachname	= "Mustermann";
 
@@ -54,8 +56,10 @@ int main()
 	cout << person2.vorname << "\t" << person2.nachname << endl;
 
 	cout << "Ausgabe der Namen mit Methoden" << endl;
-	person1.namenNennen();
-	person2.namenNennen();
+
+	// Verwendung der Parameter mit Parameter (Zusatzinformation)
+	person1.namenNennen(true);
+	person2.namenNennen(false);
 
 
 

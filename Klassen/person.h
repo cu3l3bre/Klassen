@@ -14,10 +14,15 @@ public:
 	std::string nachname;
 
 	// Methoden zum Anzeige des Namen einer Person
-	void namenNennen()
+	void namenNennen(bool VornameZuerst)
 	{
-		std::cout << vorname + " " + nachname << std::endl;
+		if (VornameZuerst)
+		{
+			std::cout << vorname + " " + nachname << std::endl;
+		}
+		else
+		{
+			std::cout << nachname + ", " + vorname << std::endl;
+		}
 	}
-
-
 };
